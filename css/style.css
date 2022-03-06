@@ -1,0 +1,344 @@
+@import "./global.css";
+@import "./header.css";
+
+.logoSite {
+  width: 134px;
+  height: 78px;
+}
+
+main h1 {
+  color: white;
+  cursor: default;
+  text-align: center;
+}
+
+.Produtos h1 {
+  transition: 1s;
+}
+
+.Produtos h1:hover {
+  color: goldenrod;
+
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.linha {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  width: 231px;
+  border: 0.1px outset white;
+}
+
+.linha2 {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 6px;
+  width: 231px;
+  border: 1px outset white;
+}
+
+.lancamentoImg img {
+  margin: 0px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  max-width: 100%;
+  width: 100%;
+  height: 680px;
+  position: relative;
+}
+
+.btnLancamento {
+  position: absolute;
+  color: black;
+  background-color: whitesmoke;
+  transition: 0.5s;
+  border-radius: 4px;
+  font-size: 16px;
+  top: 69%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 15px 50px 15px 50px;
+  cursor: pointer;
+  border: none;
+  font-weight: lighter;
+}
+
+.btnLancamento:hover {
+  font-weight: bolder;
+  transition: 0.3s;
+  background-color: #1b1b1b;
+  color: white;
+}
+
+.Produtos {
+  margin: 0 auto;
+  width: 1258px;
+  height: 587px;
+  background-color: #19191919;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.Produtos-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.Produtos-list li {
+  color: white;
+  margin-top: 20px;
+}
+
+.Produtos-list h2 {
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.Produtos-list h3 {
+  display: inline;
+  font-size: 20px;
+}
+
+.Produtos-list span {
+  margin-left: 190px;
+  color: #a6aabd;
+  font-size: 10px;
+}
+
+.produtoImg {
+  border-radius: 4px 4px 0px 0px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.produtoImg:hover {
+  transition: transform 0.2s;
+  -moz-transform: scale(1.1);
+  -webkit-transition: scale(1.1);
+  transform: scale(1.1);
+}
+
+.placaComprar {
+  width: 345px;
+  height: 50px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #8b0000;
+}
+
+.placaComprar:hover {
+  transition: 0.6s;
+  background-color: #222353;
+}
+
+.textPlaca {
+  text-decoration: none;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+.textPlaca:hover {
+  color: #22d139;
+}
+
+.Sobre {
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+}
+
+.Sobre h1 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 2rem;
+  position: relative;
+}
+
+.Sobre h1::before {
+  content: "";
+
+  width: 144px;
+  height: 70px;
+  background: url("../img/vector-sobre.svg") no-repeat;
+  position: absolute;
+  top: -15px;
+  left: 45.2%;
+  z-index: -1;
+}
+
+.Sobre img {
+  width: 586.63px;
+  border-radius: 2px;
+}
+
+.corpoSobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition: 2s;
+
+  width: 1258px;
+  height: 350px;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  border-radius: 4px;
+
+  place-self: center;
+}
+
+.corpoSobre p {
+  font-family: "Comfortaa", cursive;
+
+  line-break: normal;
+  line-height: 1.25;
+  font-size: 0.825rem;
+  color: black;
+
+  text-align: center;
+  margin: 45px 20px 20px 20px;
+  font-size: 20px;
+  letter-spacing: 1.5;
+}
+
+.corpoSobre img {
+  margin-top: 6px;
+  max-width: 100%;
+  width: 590px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 60%;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 4px;
+}
+
+#slide1,
+#slide2,
+#slide3 {
+  display: none;
+}
+
+.nav {
+  margin-left: 167px;
+
+  margin-top: 20px;
+}
+
+.nav label {
+  margin-left: 20px;
+  margin-bottom: -80px;
+}
+.bar {
+  display: inline-block;
+  position: relative;
+  transform: (-50%, -50%);
+
+  margin-top: 275px;
+  margin-left: 20px;
+  width: 30px;
+  height: 10px;
+
+  padding: 5px 10px 0px 10px;
+
+  border: 2px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover {
+  background-color: #020811;
+}
+
+.slide {
+  transition: 0.6s;
+}
+
+#slide1:checked ~ .s2,
+.s3 {
+  opacity: 0;
+}
+
+#slide2:checked ~ .s2 {
+  opacity: 100;
+}
+
+#slide3:checked ~ .s3 {
+  opacity: 100;
+}
+
+.Contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+}
+
+.Contato h2 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: start;
+  margin-left: 280px;
+}
+
+.Contato h1 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+.linhaContato {
+  width: 160px;
+  margin-left: 280px;
+  border: 2px solid #897f70;
+  border-radius: 2px;
+}
+
+.nossoContato p {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 12px;
+  margin-left: 280px;
+}
+
+.Contato section {
+  width: 600px;
+  height: 150px;
+}
+
+.nossoContato img {
+  display: inline-block;
+  margin-right: 12px;
+  height: 25px;
+  width: 25px;
+}
+
+.redesSociais p {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 12px;
+  color: white;
+}
+
+.redesSociais img {
+  display: inline-block;
+  margin-left: 0px !important;
+  height: 25px;
+  width: 25px;
+}
+
+.linhaRedes {
+  width: 150px;
+  border: 2px solid #897f70;
+  border-radius: 2px;
+}
