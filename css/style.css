@@ -172,7 +172,7 @@ main h1 {
   background: url("../img/vector-sobre.svg") no-repeat;
   position: absolute;
   top: -15px;
-  left: 45.2%;
+  margin-left: -20px;
   z-index: -1;
 }
 
@@ -277,15 +277,18 @@ main h1 {
 
 .Contato {
   display: grid;
+  align-self: center;
   grid-template-columns: 1fr 1fr;
-  margin-top: 20px;
+  width: 1258px;
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
 }
 
 .Contato h2 {
   color: white;
   font-size: 1.5rem;
   text-align: start;
-  margin-left: 280px;
 }
 
 .Contato h1 {
@@ -296,7 +299,7 @@ main h1 {
 
 .linhaContato {
   width: 160px;
-  margin-left: 280px;
+
   border: 2px solid #897f70;
   border-radius: 2px;
 }
@@ -307,11 +310,9 @@ main h1 {
   align-items: center;
   margin-top: 5px;
   font-size: 12px;
-  margin-left: 280px;
 }
 
 .Contato section {
-  width: 600px;
   height: 150px;
 }
 
