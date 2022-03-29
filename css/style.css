@@ -75,8 +75,7 @@ main h1 {
 
 .Produtos {
   margin: 0 auto;
-  width: 1258px;
-  height: 587px;
+
   background-color: #19191919;
   object-fit: cover;
   border-radius: 2px;
@@ -86,6 +85,7 @@ main h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  gap: 20px;
 }
 
 .Produtos-list li {
@@ -299,7 +299,6 @@ main h1 {
 
 .linhaContato {
   width: 160px;
-
   border: 2px solid #897f70;
   border-radius: 2px;
 }
@@ -351,13 +350,8 @@ main h1 {
 
   .Produtos {
     background-color: #19191919;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 2px;
-    width: 800px;
-  }
-
-  .Produtos h1 {
-    margin: 0 auto;
   }
 
   .linha,
@@ -379,19 +373,8 @@ main h1 {
 
   .Produtos-list {
     display: grid;
-    margin: 0px 0px 0px 0px;
-    padding: 0px;
     grid-template-columns: 1fr;
-  }
-
-  .Produtos-list ul {
-    width: 300px;
-    height: 200px;
-  }
-
-  .Produtos-list li:nth-child(2),
-  .Produtos-list li:nth-child(3) {
-    display: none;
+    padding: 0px;
   }
 
   .Produtos-list span {
@@ -424,11 +407,11 @@ main h1 {
   }
 
   .Sobre {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;
     display: grid;
     grid-column: 1/-1;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
 
   .corpoSobre {
@@ -444,18 +427,12 @@ main h1 {
     max-width: 650px;
   }
 
-  .Sobre h1::before {
-    display: none;
-  }
+
 
   .bar {
     display: none;
   }
 
-  .Contato section {
-    width: 600px;
-    height: 150px;
-  }
 
   .nossoContato p {
     margin-left: 50px;
@@ -464,6 +441,8 @@ main h1 {
 
   .Contato {
     display: grid;
+    width: auto;
+    justify-items: start;
     grid-template-columns: 1fr 1fr;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -487,11 +466,6 @@ main h1 {
     margin-left: 50px;
     border: 2px solid #897f70;
     border-radius: 2px;
-  }
-
-  .Contato section {
-    width: 200px;
-    height: 150px;
   }
 
   .Contato h2 {

@@ -103,6 +103,9 @@
 }
 
 @media (max-width: 800px) {
+  .inputL {
+    display: none;
+  }
   .header {
     flex-direction: column;
     gap: 10px;
